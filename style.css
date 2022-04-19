@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;0,900;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-weight:700;
+}
+
+body{
+    background-color:rgb(13, 13, 13);
+}
+header{
+    background-color:rgb(72, 72, 72);
+    padding: 20px;
+}
+header > h1{
+    color:white;
+    text-align:center;
+    font-weight:900;
+    font-style:italic;
+   
+}
+.score-board{
+    border:5px solid white;
+    width: 250px;
+    margin:20px auto;
+    color:white;
+    font-size:45px;
+    border-radius:4px;
+    text-align:center;
+    padding: 15px 20px;
+    position: relative;
+
+}
+.badge{
+    background-color:rgb(85, 83, 83);
+    color:white;
+    font-size:20px;
+    padding:2px 10px;
+    border-radius:10px;
+    
+
+}
+#user-label{
+    position:absolute;
+    top:35%;
+    left:-48px;
+    padding:4px 20px;
+}
+#computer-label{
+    position:absolute;
+    top:35%;
+    right:-42px;
+    padding:4px 20px;
+}
+.result{
+    color:#fff;
+    font-size:40px;
+    margin-top: 30px;
+}
+.result > p{
+    text-align:center;
+    font-weight:900;
+
+}
+.choices{
+    margin: 50px 0;
+    text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.choice > img{
+    width: 100px;
+    height: 100px;
+}
+.choice{
+    border: 5px solid rgb(222, 222, 222);
+    background-color:rgba(239, 239, 239, 0.962);
+    border-radius:50%;
+    margin: 0 20px; 
+    padding:20px;
+    transition: all 0.4s ease;
+
+}
+.choice:hover{
+    cursor: pointer;
+    /* background: rgb(222, 222, 222); */
+    border-radius:25%;
+}
+#action-message{
+    text-align: center;
+    color:#fff;
+    font-weight:900;
+    font-size:30px;
+    font-style:italic;
+}
+.green-glow{
+    border: 5px solid rgb(8, 177, 104);
+    box-shadow: 0 0 10px rgb(0, 240, 136);
+    background:rgb(10, 217, 127); 
+    
+}
+.red-glow{
+    border: 5px solid rgb(197, 9, 9);
+    box-shadow: 0 0 10px rgb(253, 43, 43);
+    background:rgb(253, 43, 43);
+}
+.gray-glow{
+    border: 5px solid rgb(137, 136, 136);
+    box-shadow: 0 0 10px rgb(195, 193, 193);
+    background:rgb(195, 193, 193);
+}
